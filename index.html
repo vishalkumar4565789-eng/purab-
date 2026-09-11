@@ -1,216 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purab Darda ( SEBI REGISTERED )</title>
-    <style>
-        body {
-            background-color: #0d1b2a;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background-color: #1b263b;
-            border-radius: 15px;
-            padding: 30px 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ffcc00;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
-            color: #ffcc00;
-            font-size: 24px;
-            margin: 5px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .subtitle {
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            color: #a0aec0;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-        
-        /* Signal Button Style */
-        .btn {
-            display: block;
-            background-color: #22c55e;
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-            font-size: 16px;
-            text-transform: uppercase;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #16a34a;
-        }
-        
-        /* Signal Loading State */
-        .btn.loading {
-            background-color: #eab308 !important;
-            color: #000000;
-            animation: pulse 1s infinite alternate;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOUTAM KUMAR JHA (OFFICIAL)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
-        @keyframes pulse {
-            0% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
+    body {
+      background-color: #f7f9fc;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px 15px;
+      color: #1a1a1a;
+    }
 
-        .badge-box {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #e2e8f0;
-        }
-        .features-list {
-            text-align: left;
-            margin: 20px 0;
-            padding: 0 10px;
-            list-style: none;
-        }
-        .features-list li {
-            margin-bottom: 12px;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .features-list li::before {
-            content: "✓";
-            color: #ffffff;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .notice {
-            color: #ffcc00;
-            font-size: 14px;
-            margin: 15px 0 5px 0;
-        }
-        .sub-text {
-            color: #a0aec0;
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        .risk-disclaimer {
-            color: #718096;
-            font-size: 11px;
-            margin-top: 15px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #718096;
-        }
-        footer a {
-            color: #3b82f6;
-            text-decoration: underline;
-        }
-    </style>
+    .container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    /* Online Badge */
+    .online-badge {
+      display: inline-flex;
+      align-items: center;
+      background-color: #e6f7ed;
+      color: #1a8a43;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .online-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #25d366;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 12px;
+    }
+
+    /* Title Section */
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #0d1117;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      color: #1d70b8;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      color: #ffb400;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .reviews {
+      font-size: 13px;
+      color: #666;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    /* CTA Button */
+    .btn-telegram {
+      display: block;
+      width: 100%;
+      background-color: #0066ff;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+      margin-bottom: 20px;
+    }
+
+    /* Stats Grid */
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      padding: 12px 8px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .stat-number {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0056b3;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #555;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* Heading Description */
+    .promo-heading {
+      font-size: 17px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .promo-heading span {
+      color: #0056b3;
+    }
+
+    .promo-subtext {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* Access Banner */
+    .access-banner {
+      background-color: #fff6e5;
+      color: #d97706;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    /* Feature List */
+    .feature-card {
+      background: #ffffff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 700;
+      color: #222;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <!-- Profile Image -->
-    <img src="https://i.ibb.co/tTxJT/Tu-Q5o-VVl-Wgq-Es-Mq8s-R-2hrw6z-4-CQym-G1-ALaj-CU5jp-Ww-YLd4g618x-YBA7o68d-Oy-XHCSPC6ja-Synh-Uu-Pj-R3-W.jpg" alt="Pankaj Bhardwaj" class="profile-img">
+  <div class="container">
+    <!-- Online Badge -->
+    <div class="online-badge">
+      <span class="online-dot"></span> 5,947 Traders Online Now
+    </div>
 
-    <h1>Purab Darda ( SEBI REGISTERED )</h1>
-    <div class="subtitle">NIFTY • BANKNIFTY • OPTIONS</div>
-    <div class="tagline">Daily Intraday Trading Signals & Analysis</div>
+    <!-- Profile -->
+    <div>
+      <img class="profile-img" src="https://i.ibb.co/hRPzSJRx/LZM1-YPZl-Omh-Bi-PIv-o-PKa-HSrz-EM3m8-XWOh-VGdw-JHqyua9-WSp-L3-Bm-Yl88zr7-A6s8z-Mpy1-FHj-Pa-l78z-zbyhi-AW2.jpg" alt="Gautam Profile">
+      <div class="title">GOUTAM KUMAR JHA (OFFICIAL)</div>
+      <div class="subtitle">🏆 India's No.1 Stock Market Channel</div>
+      <div class="rating">★★★★★</div>
+      <div class="reviews">4.9/5 (2340 Reviews)</div>
+    </div>
 
-    <!-- Single Telegram Button with Signal Effect -->
-    <button class="btn" onclick="connectSignal(this, 'https://t.me/+Z7bTtxu4N4ZhNThl')">Join Now For Free Telegram</button>
+    <!-- CTA Button -->
+    <a href="https://t.me/+pxrTFnHMtORkYmM1" class="btn-telegram">
+      Join Free Telegram Channel &rarr;
+    </a>
 
-    <!-- Trusted Badge -->
-    <div class="badge-box">
-        <div>✓ Trusted by 5,000+ Traders</div>
-        <div style="margin-top: 5px;">✓ Daily Consistent Setups</div>
+    <!-- Stats -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-number">50K+</div>
+        <div class="stat-label">Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">95%</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+    </div>
+
+    <!-- Details -->
+    <div class="promo-heading">
+      Get <span>FREE Daily Calls</span><br>for NIFTY, BANKNIFTY & SENSEX
+    </div>
+    <div class="promo-subtext">
+      Join thousands of traders getting daily market analysis
+    </div>
+
+    <!-- Limited Access -->
+    <div class="access-banner">
+      🔥 Limited FREE Access Available
     </div>
 
     <!-- Features List -->
-    <ul class="features-list">
-        <li>5-7 High Probability Trades</li>
-        <li>Exact Entry, SL & Target</li>
-        <li>Beginner Friendly Guidance</li>
-        <li>Live Market Updates</li>
-    </ul>
+    <div class="feature-card">
+      📊 Daily Nifty & BankNifty Levels
+    </div>
+    <div class="feature-card">
+      🎓 Educational Market Analysis
+    </div>
+    <div class="feature-card">
+      👥 50,000+ Subscribers Community
+    </div>
+  </div>
 
-    <div class="notice">⏳ Free Access Closing Soon</div>
-    <div class="sub-text">📊 Limited Seats • Active Community</div>
-    <div class="risk-disclaimer">⚠️ Market investments are subject to risk</div>
-
-    <!-- Footer Section with 'AI ADS AGENCY' -->
-    <footer>
-        Powered by <a href="https://t.me/+mqNI-rk7y284M2Fl">AI ADS AGENCY</a>
-    </footer>
-</div>
-
-<script>
-    // Signal Check Function
-    function connectSignal(button, url) {
-        button.innerText = "📡 CONNECTING SIGNAL...";
-        button.classList.add('loading');
-        button.disabled = true;
-
-        setTimeout(function() {
-            button.innerText = "✅ SIGNAL CONNECTED!";
-            window.location.href = url;
-            
-            setTimeout(function() {
-                button.innerText = "Join Now For Free Telegram";
-                button.classList.remove('loading');
-                button.disabled = false;
-            }, 2000);
-            
-        }, 1500); 
-    }
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1401867061914449');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1401867061914449&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 </html>
